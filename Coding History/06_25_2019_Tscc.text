@@ -1,0 +1,179 @@
+    1  unset HISTORY
+    2  cp -r /etc/skel/.[a-z]* /home/aqn018/
+    3  ssh-keygen -t rsa -f /home/aqn018/.ssh/id_rsa
+    4  cp /home/aqn018/.ssh/id_rsa.pub /home/aqn018/.ssh/authorized_keys
+    5  ls -alirt
+    6  exit
+    7  echo
+    8  ls
+    9  pwd
+   10  ~/
+   11  $HOME
+   12  pwd
+   13  ls /
+   14  -h /
+   15  h /
+   16  l /
+   17  L /
+   18  pwd
+   19  ls root
+   20  ls -h /
+   21  ls -L /
+   22  ls -l /
+   23  ls -lh /
+   24  ls -Lh /
+   25  ll /
+   26  history
+   27  ls -l /projects/ps-gleesonlab
+   28  ls -l /projects/ps-gleesonlab5
+   29  ls /projects/ps-gleesonlab5
+   30  ls /project/ps-gleesonlab5/
+   31  man ls
+   32  clear
+   33  pwd
+   34  man ls
+   35  ls /projects/ps-gleesonlab5/somatic_mosaicism/
+   36  l /projects/ps-gleesonlab5/somatic_mosaicism/README.txt 
+   37  ls /projects/ps-gleesonlab5/somatic_mosaicism//README.txt 
+   38  ls -lrt
+   39  ls -a
+   40  man ls -lrt
+   41  man ln
+   42  man ls
+   43  cd /oasis/tscc/scratch/aqn018
+   44  pwd
+   45  cd $HOME
+   46  pwd
+   47  cd /oasis//tscc//scratch/$HOME
+   48  cd /oasis/tscc/scratch/aqn018
+   49  mkdir test1
+   50  pwd
+   51  ls -l
+   52  cd test1
+   53  pwd
+   54  cd ../../
+   55  cd aqn018
+   56  pwd
+   57  cd test1
+   58  cd $home
+   59  pwd
+   60  mkdir test1
+   61  ls
+   62  rmdir test1
+   63  ls
+   64  pwd
+   65  mkdir test1
+   66  pwd
+   67  cd test1
+   68  cd
+   69  pwd
+   70  cd test1
+   71  pwd
+   72  rmdir test1
+   73  cd
+   74  pwd
+   75  ls 
+   76  rmdir test1
+   77  cd /oasis/tscc/scratch/aqn018
+   78  ls
+   79  rmdir test1
+   80  ls
+   81  pwd
+   82  find mutect /projects/ps-gleesonlab5/somatic_mosaicism/
+   83  man find
+   84  ~
+   85  pwd
+   86  exit
+   87  ls
+   88  /
+   89  root
+   90  cd /
+   91  ls
+   92  cd home
+   93  cd $HOME
+   94  ls
+   95  cd /
+   96  ls
+   97  cd $GLV
+   98  cd reference_panels/giab/
+   99  vi README.md 
+  100  vi $GIV
+  101  vi GLV
+  102  vi $GLV
+  103  vi /projects/ps-gleesonlab5/reference_panels/giab/README.md 
+  104  exit
+  105  view HG002_SVs_Tier1_v0.6.vcf.gz
+  106  cd /
+  107  ls
+  108  vi ~/.bashrc
+  109  source ~/.bashrc
+  110  ls $GLV
+  111  vi ~/.bashrc
+  112  source ~/.bashrc
+  113  ls $GLV
+  114  ls /projects/ps-gleesonlab5/reference_panels/giab/
+  115  cd /projects/ps-gleesonlab5/reference_panels/giab/
+  116  pwd
+  117  witch conda
+  118  which conda
+  119  cd $HOME
+  120  wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+  121  bash anaconda
+  122  bash Anaconda3-2019.03-Linux-x86_64.sh 
+  123  vi .bashrc
+  124  source .bashrc
+  125  vi .bashrc
+  126  source .bashrc
+  127  wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
+  128  conda install -c bioconda bcftools
+  129  conda install -c bioconda/label/broken bcftools
+  130  history
+  131  history > 06_25_2019_Tscc 
+  132  history > 06_25_2019_Tscc.text 
+  133  less  06_25_2019_Tscc.text 
+  134  ls
+  135  rm 06_25_2019_Tscc
+  136  ls
+  137  cd  06_25_2019_Tscc.text 
+  138  pwd
+  139  wget ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/HG002_SVs_Tier1_v0.6.vcf.gz
+  140  wget ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/HG002_SVs_Tier1_v0.6.vcf.gz.tbi  
+  141  ls
+  142  rmdir 06_25_2019_Tscc.text
+  143  less HG002_SVs_Tier1_v0.6.vcf.gz
+  144  less HG002_SVs_Tier1_v0.6.vcf.gz.tbi 
+  145  less HG002_SVs_Tier1_v0.6.vcf.gz
+  146  bcftools query -f'%CHROM\t%POS\n' HG002_SVs_Tier1_v0.6.vcf.gz
+  147  ls
+  148  bcftools query -f'%CHROM\t%POS0\t%INFO/END\t%INFOSVTYPE\n' HG002_SVs_Tier1_v0.6.vcf.gz
+  149  bcftools
+  150  conda install -c bioconda bcftools
+  151  bcftools query -f'%CHROM\t%POS0\t%INFO/END\t%INFOSVTYPE\n' HG002_SVs_Tier1_v0.6.vcf.gz
+  152  bcftools query -f'%CHROM\t%POS0\t%INFO/END\t%INFO/SVTYPE\n' HG002_SVs_Tier1_v0.6.vcf.gz
+  153  bcftools query -i'FILTER="PASS"' -f'[%CHROM\t%POS0\t%INFO/END\t%INFO/SVTYPE\t%INFO/SVLEN\t%INFO/Illcalls\t%INFO/MendelianError\t%INFO/HG003_GT\t%INFO/HG004_GT\t%GT\t%ILLMP_GT\n]' HG002_SVs_Tier1_v0.6.vcf.gz >$HOME/hg002_svs_giab_illumina_calls.txt
+  154  ls
+  155  rm hg002_svs_giab_illumina_calls.txt 
+  156  ls
+  157  bcftools query -i'FILTER="PASS"' -f'[%CHROM\t%POS0\t%INFO/END\t%INFO/SVTYPE\t%INFO/SVLEN\t%INFO/Illcalls\t%INFO/MendelianError\t%INFO/HG003_GT\t%INFO/HG004_GT\t%GT\t%ILLMP_GT\n]' HG002_SVs_Tier1_v0.6.vcf.gz >$HOME/hg002_svs_giab_illumina_calls.txt
+  158  ls
+  159  mv hg002_svs_giab_illumina_calls.txt hg002_svs_giab_illumina_calls_06_25_2019.txt 
+  160  ls
+  161  histroy
+  162  history
+  163  ls
+  164  history >06_25_2019_Tscc.text 
+  165  vi ~/.bashrc
+  166  vi ~./.bashrc
+  167  vi .bashrc
+  168  vi ~./.bashrc
+  169  ls
+  170  vi ~/.bashrc
+  171  ls
+  172  ls -alt .bashrc
+  173  vi ~/.bashrc
+  174  ls .bashrc*
+  175  rm .bashrc.swp
+  176  vi .bashrc
+  177  history
+  178  ls
+  179  history >06_25_2019_Tscc.text 

@@ -1,0 +1,42 @@
+    1  tscc
+    2  pwd
+    3  ls
+    4  cd $HOME
+    5  pwd
+    6  cd C:
+    7  cd /
+    8  pwd
+    9  ls
+   10  cd home
+   11  ls
+   12  cd aqnguyen96
+   13  ls
+   14  pwd
+   15  cd /mnt/
+   16  ls
+   17  cd c
+   18  ls
+   19  cd users
+   20  ls
+   21  cd .
+   22  cd ..
+   23  scp aqn018@tscc-login1.sdsc.edu: /projects/ps-gleesonlab5/references_panels/giab/README.md ./
+   24  scp aqn018@tscc-login1.sdsc.edu:/projects/ps-gleesonlab5/reference_panels/giab/README.md ./
+   25  pwd
+   26  ls
+   27  cd users
+   28  pwd
+   29  cd ..
+   30  cd Users
+   31  pwd
+   32  ls
+   33  cd aqngu
+   34  ls
+   35  cd Documents
+   36  ls
+   37  cd ..
+   38  cd Desktop
+   39  ls
+   40  scp aqn018@tscc-login1.sdsc.edu:/projects/ps-gleesonlab5/reference_panels/giab/README.md ./
+   41  history
+   42  history >myhistory.test.text
